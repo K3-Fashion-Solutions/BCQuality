@@ -191,7 +191,9 @@
         "al-comments-must-not-restate-what-code-already-shows",
         "pages-must-not-contain-business-logic",
         "mutating-procedure-for-a-page-caller-takes-var-record",
-        "build-client-links-with-geturl"
+        "build-client-links-with-geturl",
+        "k3-xml-documentation-for-global-procedures",
+        "k3-xml-documentation-for-integration-events"
       ]
     },
     "telemetry": {
