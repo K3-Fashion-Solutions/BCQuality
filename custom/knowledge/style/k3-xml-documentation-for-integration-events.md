@@ -21,6 +21,10 @@ Event subscribers (`[EventSubscriber]`) are not publishers and are not covered b
 
 Start the `<summary>` with `Raised before…` or `Raised after…`, followed by the action the event wraps. Describe each parameter's meaning and whether a subscriber may change it. For example, the summary for `OnBeforeAddTwoDecimals` reads `Raised before AddTwoDecimals adds the two values.`, and the `FirstValue` param says what the value is and whether subscribers may change it.
 
+See sample: [`k3-xml-documentation-for-integration-events.good.al`](k3-xml-documentation-for-integration-events.good.al).
+
 ## Anti Pattern
 
 An event publisher with no XML documentation, or a `<summary>` that only restates the name, such as `Event for AddTwoDecimals`. Subscribers then have to read the publisher's body to learn when it fires and which parameters it passes, which is exactly what the documentation is meant to prevent.
+
+See sample: [`k3-xml-documentation-for-integration-events.bad.al`](k3-xml-documentation-for-integration-events.bad.al).

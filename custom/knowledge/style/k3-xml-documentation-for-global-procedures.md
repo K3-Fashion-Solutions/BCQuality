@@ -19,6 +19,10 @@ XML docs are NOT required on local or internal procedures, event subscribers, tr
 
 For every global procedure on a codeunit, write a `<summary>` describing what the procedure does, one `<param>` per parameter naming its role and preconditions, and `<returns>` describing the return when applicable. Avoid placeholder text — `<summary>Validates discount</summary>` is no better than no doc at all.
 
+See sample: [`k3-xml-documentation-for-global-procedures.good.al`](k3-xml-documentation-for-global-procedures.good.al).
+
 ## Anti Pattern
 
 A global procedure on a codeunit with no XML doc, or a `<summary>` that restates the procedure name in three words. The first leaves readers guessing at intent; the second wastes the slot a meaningful description should occupy.
+
+See sample: [`k3-xml-documentation-for-global-procedures.bad.al`](k3-xml-documentation-for-global-procedures.bad.al).
