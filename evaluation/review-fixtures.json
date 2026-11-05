@@ -5,6 +5,14 @@
   "minimumCleanRate": 1.0,
   "coverageWaivers": [
     {
+      "path": "custom/knowledge/style/k3-xml-documentation-for-global-procedures.md",
+      "reason": "The rule is about XML documentation comments, which are removed when review samples are neutralized, so the defect cannot be evaluated from the remaining code."
+    },
+    {
+      "path": "custom/knowledge/style/k3-xml-documentation-for-integration-events.md",
+      "reason": "The rule is about XML documentation comments, which are removed when review samples are neutralized, so the defect cannot be evaluated from the remaining code."
+    },
+    {
       "path": "microsoft/knowledge/reporting/do-not-rename-or-remove-shipped-report-dataset-columns.md",
       "reason": "The defect is a change relative to a released version; a single neutralized sample cannot show which column names shipped before."
     },
@@ -191,7 +199,9 @@
         "al-comments-must-not-restate-what-code-already-shows",
         "pages-must-not-contain-business-logic",
         "mutating-procedure-for-a-page-caller-takes-var-record",
-        "build-client-links-with-geturl"
+        "build-client-links-with-geturl",
+        "k3-xml-documentation-for-global-procedures",
+        "k3-xml-documentation-for-integration-events"
       ]
     },
     "telemetry": {
